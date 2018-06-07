@@ -1,0 +1,27 @@
+
+
+
+  <!-- <a  [style.color]="m.selectedMenu=='BIO'?'red':'blue'" (dblclick)="onSelect('BIO')" href="#"> BIO </a>
+  <a  [style.color]="m.selectedMenu=='REALISATION'?'red':'blue'" (dblclick)="onSelect('REALISATION')"  href="#"> REALISATION </a>
+  <a [style.color]="m.selectedMenu=='CONTACT'?'red':'blue'" (dblclick)="onSelect('CONTACT')" href="#"> CONTACT </a> -->
+
+  <!-- <h2>Menu</h2>
+
+  <ol>
+  
+   <li *ngFor = "let mq of menu">
+  
+     <a [style.color] ="menu.selectedMenu== mq ? 'red' : 'blue'" (dblclick)="onSelect(mq)" href="#" > {{mq.name}} </a>
+  
+  
+  
+   </li>
+  
+  </ol> -->
+
+  <ul>
+    <li (click)="selectMenu('BIO')"[style.color]="menuService.selectedMenu =='BIO' ? 'red' : 'blue'">BIO</li> 
+    <li (click)="selectMenu('REALISATION')"[style.color]="menuService.selectedMenu =='REALISATION' ? 'red' : 'blue'">REALISATION</li> 
+    <li (click)="selectMenu('CONTACT')"[style.color]="menuService.selectedMenu =='CONTACT' ? 'red' : 'blue'">CONTACT</li> 
+
+  </ul>

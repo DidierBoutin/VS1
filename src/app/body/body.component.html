@@ -1,0 +1,26 @@
+<!-- <div *ngIf="menuService.selection !== undefined">
+  <h1>{{menuService.selection.name}}</h1>
+  <h1>{{menuService.selection.description}}</h1>
+ </div> -->
+<ng-container [ngSwitch]="menuService.selectedMenu">
+<ng-container *ngSwitchCase="'BIO'">
+   <h1>BIO</h1>
+<p>
+  jlksqdsq,qllvd
+</p>
+</ng-container>
+
+<ng-container *ngSwitchCase="'REALISATION'">
+  <h1>REALISATION</h1>
+<p>
+  jlksqdsq,qllvd
+</p>
+</ng-container>
+
+<ng-container *ngSwitchCase="'CONTACT'">
+  <h1>CONTACT</h1>
+<p>
+  jlksqdsq,qllvd
+</p>
+</ng-container>
+</ng-container>
